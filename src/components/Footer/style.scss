@@ -1,0 +1,146 @@
+@import '../../sass/base.scss';
+@import '../../sass/variables.scss';
+
+.footer {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: center;
+
+  height: 8rem;
+  width: 100%;
+  background-color: $blue-grey-dark-5of5;
+  color: white;
+
+  @media (max-width: 500px) {
+    padding-left: 0.4rem;
+  }
+
+  &__navigation {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    ul {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 1.6rem;
+
+      list-style-type: none;
+
+      @media (max-width: 1000px) {
+        gap: 0.8rem;
+        font-size: 1.4rem;
+      }
+
+      @media (max-width: 800px) {
+        gap: 0.8rem;
+        font-size: 1.2rem;
+      }
+
+      @media (max-width: 730px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 0.8rem;
+        gap: 0.4rem;
+      }
+
+      @media (max-width: 500px) {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+        grid-column-gap: 1.2rem;
+        grid-row-gap: 0;
+      }
+
+      @media (max-width: 380px) {
+        grid-column-gap: 0.8rem;
+      }
+    }
+  }
+
+  li {
+    @media (max-width: 500px) {
+      margin-top: -0.4rem;
+    }
+  }
+
+  &__navigation-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    @media (max-width: 500px) {
+      margin-top: -0.4rem;
+    }
+
+    &:hover {
+      color: $blue-light-2of5;
+    }
+  }
+
+  &__connect {
+    font-size: 2rem;
+
+    @media (max-width: 1000px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 730px) {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__connect-link {
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    color: white;
+
+    &:hover {
+      color: $blue-light-2of5;
+      cursor: pointer;
+    }
+  }
+
+  &__attribution {
+    width: min-content;
+    height: min-content;
+
+    img {
+      width: 12rem;
+
+      @media (max-width: 1000px) {
+        width: 9.6rem;
+      }
+
+      @media (max-width: 600px) {
+        width: 8rem;
+      }
+
+      @media (max-width: 380px) {
+        width: 6.4rem;
+      }
+    }
+  }
+
+  &__copyright {
+    @media (max-width: 1000px) {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: .8rem;
+    }
+  }
+}

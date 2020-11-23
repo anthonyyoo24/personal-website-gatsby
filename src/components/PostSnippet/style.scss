@@ -1,0 +1,60 @@
+@import '../../sass/base.scss';
+@import '../../sass/variables.scss';
+
+.post-snippet {
+  display: grid;
+  background-color: white;
+  margin-bottom: 4.8rem;
+  margin-top: 2.4rem;
+
+  &__date {
+    color: $blue-grey-dark-1of5;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+
+    @media (max-width: 500px) {
+      font-size: 3rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    margin: 1.6rem 0;
+
+    @media (max-width: 500px) {
+      margin: 0;
+    }
+  }
+
+  &__summary {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 2rem;
+    line-height: 1.65;
+    font-weight: 400;
+    margin-top: 1.2rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.8rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 1.6rem;
+      line-height: 1.55;
+    }
+  }
+
+  &__more {
+    margin-top: 0.4rem;
+    color: $cyan-dark-3of5;
+  }
+}

@@ -1,0 +1,80 @@
+@import "../sass/base.scss";
+@import "../sass/variables.scss";
+
+.portfolio {
+  max-width: 80%;
+  margin: 9.6rem auto 4.8rem auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    max-width: 50%;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 70%;
+  }
+
+  @media (max-width: 500px) {
+    max-width: 95%;
+  }
+}
+
+.project {
+  display: grid;
+  justify-items: start;
+  gap: 1.6rem;
+
+  padding: 2rem 4.8rem;
+  box-shadow: $shadow-double-3of5;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  height: 45rem;
+
+  @media (max-width: 400px) {
+    padding: 1.6rem 4.8rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1rem;
+    top: 0;
+    left: 0;
+    background-color: $blue-light-5of5;
+  }
+
+  &__name {
+    justify-self: center;
+    font-size: 1.8rem;
+
+    @media (max-width: 400px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    border: 1px solid $blue-grey-light-2of5;
+    align-self: start;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+
+    @media (max-width: 400px) {
+      font-size: 1.4rem;
+    }
+  }
+
+  a {
+    justify-self: center;
+    align-self: end;
+    text-decoration: none;
+  }
+}

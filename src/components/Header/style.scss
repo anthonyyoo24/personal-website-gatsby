@@ -1,0 +1,226 @@
+@import "../../sass/base.scss";
+@import "../../sass/utilities.scss";
+@import "../../sass/variables.scss";
+
+.header {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+
+  width: 100%;
+  height: 5rem;
+  padding: 0 12.8rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  font-weight: 400;
+
+  @media (max-width: 1000px) {
+    padding: 0 4.8rem;
+  }
+
+  @media (max-width: 845px) {
+    padding: 0 3.2rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 1.6rem;
+  }
+
+  &.filled {
+    background-color: $blue-grey-dark-5of5;
+    box-shadow: $shadow-single-2of5;
+  }
+
+  &__logo {
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.4rem;
+    text-decoration: none;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    @media (max-width: 730px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      color: $blue-light-2of5;
+    }
+  }
+
+  &__navigation {
+    justify-self: end;
+
+    letter-spacing: 0.2rem;
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+
+    ul {
+      list-style-type: none;
+      display: grid;
+      grid-auto-flow: column;
+      grid-column-gap: 3.2rem;
+      font-size: 1.2rem;
+
+      @media (max-width: 845px) {
+        grid-column-gap: 1.2rem;
+      }
+
+      @media (max-width: 730px) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 0.8rem;
+        grid-column-gap: 0.8rem;
+      }
+    }
+
+    li {
+      position: relative;
+    }
+  }
+
+  &__navigation-link {
+    color: white;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    text-decoration: none;
+
+    &:hover {
+      color: $blue-light-2of5;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0%;
+      height: 0.2rem;
+      margin-top: 0.3rem;
+      background-color: $blue-light-2of5;
+      transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    &:hover::before {
+      width: 100%;
+    }
+  }
+}
+
+.popup {
+  display: none;
+  opacity: 0;
+
+  @media (max-width: 500px) {
+    display: initial;
+    opacity: 1;
+  }
+
+  &__checkbox {
+    display: none;
+
+    &:checked ~ .popup__navigation {
+      opacity: 1;
+      width: 30%;
+
+      @media (max-width: 380px) {
+        width: 40%;
+      }
+    }
+  }
+
+  &__button {
+    position: fixed;
+    z-index: 20;
+    top: 2.4rem;
+    right: 1.2rem;
+    cursor: pointer;
+  }
+
+  &__icon {
+    position: relative;
+
+    &,
+    &::before,
+    &::after {
+      width: 2rem;
+      height: 2.4px;
+      background-color: white;
+      display: inline-block;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+
+    &::before {
+      top: -0.6rem;
+    }
+
+    &::after {
+      top: 0.6rem;
+    }
+  }
+
+  &__navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    background-color: $blue-grey-dark-5of5;
+    opacity: 0;
+    height: min-content;
+    width: 0;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    ul {
+      display: grid;
+      gap: 0.8rem;
+      list-style: none;
+      padding: 0.8rem;
+    }
+  }
+
+  &__navigation-link {
+    color: white;
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+
+    &:hover {
+      color: $blue-light-2of5;
+    }
+  }
+
+  &__checkbox:checked + &__button &__icon {
+    background-color: transparent;
+  }
+
+  &__checkbox:checked + &__button &__icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+
+  &__checkbox:checked + &__button &__icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+
+  &__button:hover &__icon::before {
+    top: -0.7rem;
+  }
+
+  &__button:hover &__icon::after {
+    top: 0.7rem;
+  }
+}
