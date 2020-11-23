@@ -91,7 +91,7 @@ const Header = ({ location }) => {
             id="popup-toggle"
           />
 
-          <label for="popup-toggle" className="popup__button">
+          <label htmlFor="popup-toggle" className="popup__button">
             <span className="popup__icon">&nbsp;</span>
           </label>
 
