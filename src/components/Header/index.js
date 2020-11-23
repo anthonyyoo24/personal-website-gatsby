@@ -24,6 +24,10 @@ const Header = ({ location }) => {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        />
       </Helmet>
       <header className={`header ${headerStyle}`}>
         <span>
