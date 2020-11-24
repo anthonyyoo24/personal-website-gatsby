@@ -17,11 +17,6 @@
 
     div {
       animation: fadeIn 2s ease-out 0.5s backwards;
-
-      // &.animate {
-      //   animation: moveInLeft 1s ease-out 1s both;
-      //   visibility: visible;
-      // }
     }
   }
 
@@ -131,7 +126,7 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 0.5s both;
+        animation: moveInLeft 1s ease-out 0.5s backwards;
         visibility: visible;
       }
     }
@@ -150,7 +145,7 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 1s both;
+        animation: moveInLeft 1s ease-out 1s backwards;
         visibility: visible;
       }
     }
@@ -169,7 +164,7 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 1.5s both;
+        animation: moveInLeft 1s ease-out 1.5s backwards;
         visibility: visible;
       }
     }
@@ -189,7 +184,7 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 2s both;
+        animation: moveInLeft 1s ease-out 2s backwards;
         visibility: visible;
       }
     }
