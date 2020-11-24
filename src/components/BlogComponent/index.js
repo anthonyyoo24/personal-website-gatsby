@@ -19,7 +19,7 @@ const BlogComponent = ({ location }) => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const page = params.page || 1
-  const pageSize = 2
+  const pageSize = 10
   const totalPosts = posts ? posts.length : 1
   const totalPages = Math.ceil(totalPosts / pageSize)
 
