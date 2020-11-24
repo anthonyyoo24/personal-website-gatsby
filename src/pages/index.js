@@ -78,7 +78,7 @@ const Home = ({ location }) => {
           <h2 className={animate}>a front-end developer.</h2>
           <p className={animate}>
             I currently use JavaScript, React, Redux, HTML, CSS, SASS, Firebase,
-            and Git.
+            Gatsby, and Git.
           </p>
         </div>
       </BackgroundImage>
