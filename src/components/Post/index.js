@@ -1,15 +1,27 @@
 import "./style.scss"
-import React from "react"
+import React, { useEffect } from "react"
 import moment from "moment"
 import { Link } from "gatsby"
 import { useParams } from "@reach/router"
-import { useSelector } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import Header from "../Header"
 import Footer from "../Footer"
+import { fetchPost } from "../../redux/actions"
 
 const Post = ({ location }) => {
   const { slug } = useParams()
-  const post = useSelector(state => state.posts[slug])
+  const dispatch = useDispatch()
+  const post = useSelector(state => {
+    if (!state.posts) return null
+
+    return state.posts[slug]
+  })
+
+  useEffect(() => {
+    if (!post) {
+      dispatch(fetchPost(slug))
+    }
+  }, [dispatch, post, slug])
 
   const renderPost = () => {
     if (!post) return <div>Fetching post...</div>
@@ -41,4 +53,3 @@ const Post = ({ location }) => {
 }
 
 export default Post
-
