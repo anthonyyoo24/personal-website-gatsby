@@ -34,8 +34,6 @@ const Home = ({ location }) => {
     const handleScroll = () => {
       const about = document.querySelector(".about")
 
-      console.log(window.scrollY, about.offsetTop)
-
       if (window.scrollY >= about.offsetTop) {
         setAnimate("animate")
       }

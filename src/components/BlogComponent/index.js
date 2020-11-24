@@ -25,7 +25,6 @@ const BlogComponent = ({ location }) => {
 
   useEffect(() => {
     if (!JSON.parse(localStorage.getItem("posts"))) {
-      console.log("Fetched posts")
       dispatch(fetchPosts())
     }
   }, [posts, dispatch])
