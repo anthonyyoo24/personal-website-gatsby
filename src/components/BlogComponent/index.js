@@ -10,7 +10,11 @@ import Footer from "../Footer"
 import { fetchPosts } from "../../redux/actions"
 
 const BlogComponent = ({ location }) => {
-  const posts = useSelector(state => Object.values(state.posts))
+  const posts = useSelector(state => {
+    if (!state.posts) return null
+
+    return Object.values(state.posts)
+  })
   const params = useParams()
   const navigate = useNavigate()
   const dispatch = useDispatch()
@@ -20,7 +24,7 @@ const BlogComponent = ({ location }) => {
   const totalPages = Math.ceil(totalPosts / pageSize)
 
   useEffect(() => {
-    if (posts.length === 0) {
+    if (!JSON.parse(localStorage.getItem("posts"))) {
       console.log("Fetched posts")
       dispatch(fetchPosts())
     }
