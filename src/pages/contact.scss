@@ -1,0 +1,70 @@
+@import "../sass/base.scss";
+@import "../sass/variables.scss";
+@import "../sass/utilities.scss";
+
+.contact-page {
+  height: 100vh;
+}
+
+.contact {
+  max-width: 35%;
+  margin: 0 auto 4.8rem auto;
+  padding-top: 7.4rem;
+
+  @media (max-width: 800px) {
+    max-width: 50%;
+  }
+
+  @media (max-width: 550px) {
+    max-width: 60%;
+  }
+
+  @media (max-width: 450px) {
+    max-width: 85%;
+  }
+
+  h1 {
+    margin-bottom: 3.2rem;
+    text-align: center;
+    font-size: 2.4rem;
+  }
+}
+
+.contact-form {
+  display: grid;
+
+  button {
+    font-weight: 700;
+    margin-top: 0.4rem;
+  }
+}
+
+.field {
+  &__input {
+    width: 100%;
+    outline: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 1.2rem 1.6rem;
+    border: none;
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+    border: 1.5px solid white;
+    box-shadow: $shadow-single-1of5;
+    resize: vertical;
+    border: 1px solid $blue-light-1of5;
+  }
+
+  &__error {
+    color: $red-light-5of5;
+  }
+
+  &.error {
+    input,
+    textarea {
+      margin-bottom: 0;
+      border: 1.5px solid $red-light-4of5;
+      background-color: $red-light-1of5;
+    }
+  }
+}
