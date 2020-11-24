@@ -8,7 +8,6 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 
 const Home = ({ location }) => {
-  const [animate, setAnimate] = useState("")
   const { home, about } = useStaticQuery(
     graphql`
       query {
@@ -30,10 +29,12 @@ const Home = ({ location }) => {
     `
   )
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const about = document.querySelector(".about")
+  const [animate, setAnimate] = useState("")
 
+  useEffect(() => {
+    const about = document.querySelector(".about")
+
+    const handleScroll = () => {
       if (window.scrollY >= about.offsetTop) {
         setAnimate("animate")
       }
