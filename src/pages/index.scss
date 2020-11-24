@@ -3,9 +3,6 @@
 @import "../sass/animations.scss";
 
 .home {
-  // background-image: url("../images/home.JPG");
-  // background-position: center;
-  // background-size: cover;
   height: 100vh;
   filter: grayscale(50%);
 
@@ -17,6 +14,15 @@
     text-align: center;
     color: white;
     text-shadow: 0 0 2rem hsla(0, 0%, 0%, 1);
+
+    div {
+      animation: fadeIn 2s ease-out 1s backwards;
+
+      // &.animate {
+      //   animation: moveInLeft 1s ease-out 1s both;
+      //   visibility: visible;
+      // }
+    }
   }
 
   &__heading {
@@ -25,7 +31,7 @@
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 0.8rem;
-      animation: moveInLeft 1s ease-out;
+      animation: moveInLeft 1s ease-out 1s backwards;
 
       @media (max-width: 845px) {
         font-size: 2.4rem;
@@ -52,7 +58,7 @@
       font-family: "Playfair Display", sans-serif;
       font-weight: 600;
       letter-spacing: 0.2rem;
-      animation: moveInRight 1s ease-out;
+      animation: moveInRight 1s ease-out 1s backwards;
 
       @media (max-width: 845px) {
         font-size: 1.2rem;
@@ -66,10 +72,6 @@
         font-size: 0.8rem;
       }
     }
-
-    div {
-      animation: fadeIn 2s ease-out;
-    }
   }
 }
 
@@ -79,8 +81,6 @@
   column-gap: 3.2rem;
 
   height: 100vh;
-  // background-image: url("../images/about.JPG");
-  // background-size: cover;
   background-position: top;
 
   @media (max-width: 500px) {
