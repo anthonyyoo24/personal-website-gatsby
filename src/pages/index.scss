@@ -4,7 +4,8 @@
 
 .home {
   height: 100vh;
-  filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
 
   &__text-box {
     position: absolute;
@@ -16,7 +17,8 @@
     text-shadow: 0 0 2rem hsla(0, 0%, 0%, 1);
 
     div {
-      animation: fadeIn 2s ease-out 0.5s backwards;
+      -webkit-animation: fadeIn 2s ease-out 0.5s backwards;
+              animation: fadeIn 2s ease-out 0.5s backwards;
     }
   }
 
@@ -26,7 +28,8 @@
       font-size: 3rem;
       font-weight: 700;
       letter-spacing: 0.8rem;
-      animation: moveInLeft 1s ease-out 0.5s backwards;
+      -webkit-animation: moveInLeft 1s ease-out 0.5s backwards;
+              animation: moveInLeft 1s ease-out 0.5s backwards;
 
       @media (max-width: 845px) {
         font-size: 2.4rem;
@@ -53,7 +56,8 @@
       font-family: "Playfair Display", sans-serif;
       font-weight: 600;
       letter-spacing: 0.2rem;
-      animation: moveInRight 1s ease-out 0.5s backwards;
+      -webkit-animation: moveInRight 1s ease-out 0.5s backwards;
+              animation: moveInRight 1s ease-out 0.5s backwards;
 
       @media (max-width: 845px) {
         font-size: 1.2rem;
@@ -73,7 +77,8 @@
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 3.2rem;
+  -moz-column-gap: 3.2rem;
+       column-gap: 3.2rem;
 
   height: 100vh;
   background-position: top;
@@ -126,7 +131,8 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 0.5s backwards;
+        -webkit-animation: moveInLeft 1s ease-out 0.5s backwards;
+                animation: moveInLeft 1s ease-out 0.5s backwards;
         visibility: visible;
       }
     }
@@ -145,7 +151,8 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 1s backwards;
+        -webkit-animation: moveInLeft 1s ease-out 1s backwards;
+                animation: moveInLeft 1s ease-out 1s backwards;
         visibility: visible;
       }
     }
@@ -164,7 +171,8 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 1.5s backwards;
+        -webkit-animation: moveInLeft 1s ease-out 1.5s backwards;
+                animation: moveInLeft 1s ease-out 1.5s backwards;
         visibility: visible;
       }
     }
@@ -184,7 +192,8 @@
       }
 
       &.animate {
-        animation: moveInLeft 1s ease-out 2s backwards;
+        -webkit-animation: moveInLeft 1s ease-out 2s backwards;
+                animation: moveInLeft 1s ease-out 2s backwards;
         visibility: visible;
       }
     }
