@@ -4,6 +4,7 @@ import React, { useEffect } from "react"
 import { useNavigate, useParams } from "@reach/router"
 import { Pagination } from "semantic-ui-react"
 import { useDispatch, useSelector } from "react-redux"
+import { Helmet } from "react-helmet"
 import PostSnippet from "../PostSnippet"
 import Header from "../Header"
 import Footer from "../Footer"
@@ -49,6 +50,9 @@ const BlogComponent = ({ location }) => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Blog | Anthony Yoo</title>
+      </Helmet>
       <Header location={location} />
       <div className="blog">{renderPosts()}</div>
       <div className="pagination">

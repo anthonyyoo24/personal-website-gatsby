@@ -4,6 +4,7 @@ import _ from "lodash"
 import React, { useEffect, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
+import { Helmet } from "react-helmet"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
 
@@ -52,6 +53,9 @@ const Home = ({ location }) => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>Home | Anthony Yoo</title>
+      </Helmet>
       <Header location={location} />
       <BackgroundImage
         className="home"

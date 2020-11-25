@@ -2,6 +2,7 @@ import "./story.scss"
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import { Helmet } from "react-helmet"
 import StoryText from "../components/StoryText"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
@@ -23,6 +24,9 @@ const Story = ({ location }) => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>My Story | Anthony Yoo</title>
+      </Helmet>
       <Header location={location} />
       <section className="story">
         <Img fluid={data.file.childImageSharp.fluid} className="story__img" />

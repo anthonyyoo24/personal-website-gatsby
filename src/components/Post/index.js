@@ -4,6 +4,7 @@ import moment from "moment"
 import { Link } from "gatsby"
 import { useParams } from "@reach/router"
 import { useDispatch, useSelector } from "react-redux"
+import { Helmet } from "react-helmet"
 import Header from "../Header"
 import Footer from "../Footer"
 import { fetchPost } from "../../redux/actions"
@@ -28,6 +29,9 @@ const Post = ({ location }) => {
 
     return (
       <React.Fragment>
+        <Helmet>
+          <title>{post.title} | Anthony Yoo</title>
+        </Helmet>
         <Header location={location} />
         <div className="post">
           <h1 className="post__title">{post.title}</h1>
