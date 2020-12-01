@@ -41,6 +41,8 @@ const Home = ({ location }) => {
       }
     }
 
+    handleScroll()
+
     const debouncedHandleScroll = _.debounce(handleScroll, 20)
 
     window.addEventListener("scroll", debouncedHandleScroll)
