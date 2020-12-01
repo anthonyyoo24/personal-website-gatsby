@@ -24,10 +24,6 @@ const Header = ({ location }) => {
           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link
-          rel="stylesheet"
-          href="https://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css"
-        />
       </Helmet>
       <header className={`header ${headerStyle}`}>
         <span>
