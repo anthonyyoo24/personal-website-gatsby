@@ -26,7 +26,7 @@ const Header = ({ location }) => {
         />
         <link
           rel="stylesheet"
-          href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css"
+          href="https://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css"
         />
       </Helmet>
       <header className={`header ${headerStyle}`}>
