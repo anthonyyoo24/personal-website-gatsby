@@ -6,11 +6,9 @@ import { Pagination } from "semantic-ui-react"
 import { useDispatch, useSelector } from "react-redux"
 import { Helmet } from "react-helmet"
 import PostSnippet from "../PostSnippet"
-import Header from "../Header"
-import Footer from "../Footer"
 import { fetchPosts } from "../../redux/actions"
 
-const BlogComponent = ({ location }) => {
+const BlogComponent = () => {
   const posts = useSelector(state => {
     if (!state.posts) return null
 
@@ -53,7 +51,6 @@ const BlogComponent = ({ location }) => {
       <Helmet>
         <title>Blog | Anthony Yoo</title>
       </Helmet>
-      <Header location={location} />
       <div className="blog">{renderPosts()}</div>
       <div className="pagination">
         <Pagination
@@ -65,7 +62,6 @@ const BlogComponent = ({ location }) => {
           boundaryRange={0}
         />
       </div>
-      <Footer />
     </React.Fragment>
   )
 }

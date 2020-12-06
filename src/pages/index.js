@@ -5,10 +5,8 @@ import React, { useEffect, useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import { Helmet } from "react-helmet"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 
-const Home = ({ location }) => {
+const Home = () => {
   const { home, about } = useStaticQuery(
     graphql`
       query {
@@ -58,7 +56,6 @@ const Home = ({ location }) => {
       <Helmet>
         <title>Home | Anthony Yoo</title>
       </Helmet>
-      <Header location={location} />
       <BackgroundImage
         className="home"
         fluid={home.childImageSharp.fluid}
@@ -87,7 +84,6 @@ const Home = ({ location }) => {
           </p>
         </div>
       </BackgroundImage>
-      <Footer />
     </React.Fragment>
   )
 }

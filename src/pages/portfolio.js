@@ -3,11 +3,9 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 import boxAndCask from "../images/boxAndCask.gif"
 
-const Portfolio = ({ location }) => {
+const Portfolio = () => {
   const { goalTracker, calculator, githubLogo } = useStaticQuery(
     graphql`
       query {
@@ -41,7 +39,6 @@ const Portfolio = ({ location }) => {
        <Helmet>
         <title>Portfolio | Anthony Yoo</title>
       </Helmet>
-      <Header location={location} />
       <div className="portfolio">
         <div className="project">
           <h2 className="project__name">Box&Cask</h2>
@@ -118,7 +115,6 @@ const Portfolio = ({ location }) => {
           </a>
         </div>
       </div>
-      <Footer />
     </React.Fragment>
   )
 }

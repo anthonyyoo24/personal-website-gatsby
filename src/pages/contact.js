@@ -6,8 +6,6 @@ import BackgroundImage from "gatsby-background-image"
 import emailjs from "emailjs-com"
 import { useDispatch } from "react-redux"
 import { Helmet } from "react-helmet"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
 
 const renderError = ({ error, touched }) => {
   if (touched && error) {
@@ -92,10 +90,9 @@ const Contact = props => {
 
   return (
     <React.Fragment>
-       <Helmet>
+      <Helmet>
         <title>Contact | Anthony Yoo</title>
       </Helmet>
-      <Header location={props.location} />
       <BackgroundImage
         className="contact-page"
         fluid={wave.childImageSharp.fluid}
@@ -130,7 +127,6 @@ const Contact = props => {
           </form>
         </div>
       </BackgroundImage>
-      <Footer />
     </React.Fragment>
   )
 }
