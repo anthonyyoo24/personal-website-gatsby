@@ -29,6 +29,10 @@ const Post = () => {
       <React.Fragment>
         <Helmet>
           <title>{post.title} | Anthony Yoo</title>
+          <link
+            rel="stylesheet"
+            href="http://d2z2rr99bkshyr.cloudfront.net/buttercms-post-defaults.css"
+          />
         </Helmet>
         <div className="post">
           <h1 className="post__title">{post.title}</h1>
