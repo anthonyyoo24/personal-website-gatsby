@@ -122,4 +122,18 @@
     width: 100%;
     height: 100%;
   }
+
+  code {
+    color: $red-light-5of5;
+    background-color: $red-light-1of5;
+    font-size: 1.6rem;
+
+    @media (max-width: 500px) {
+      font-size: 1.4rem;
+    }
+
+    @media (max-width: 380px) {
+      font-size: 1.2rem;
+    }
+  }
 }
