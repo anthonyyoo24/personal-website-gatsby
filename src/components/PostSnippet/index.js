@@ -12,13 +12,13 @@ const PostSnippet = props => {
         </span>
         <h1>
           <Link
-            to={`/blog/posts/${props.slug}`}
+            to={`/blog/${props.slug}`}
             className="post-snippet__title"
           >
             {props.title}
           </Link>
         </h1>
-        <Link to={`/blog/posts/${props.slug}`}>
+        <Link to={`/blog/${props.slug}`}>
           <img
             className="post-snippet__img"
             src={props.featured_image}
@@ -26,7 +26,7 @@ const PostSnippet = props => {
           />
         </Link>
         <p className="post-snippet__summary">{props.summary}</p>
-        <Link to={`/blog/posts/${props.slug}`} className="post-snippet__more">
+        <Link to={`/blog/${props.slug}`} className="post-snippet__more">
           Read more
         </Link>
       </div>

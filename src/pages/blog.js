@@ -7,7 +7,7 @@ const Blog = ({ location }) => {
   return (
     <Router basepath="/blog">
       <BlogComponent path="/page/:page" />
-      <Post path="/posts/:slug" location={location} />
+      <Post path="/:slug" location={location} />
     </Router>
   )
 }
