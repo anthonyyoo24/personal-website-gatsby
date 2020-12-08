@@ -29,6 +29,7 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-layout`,
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-create-client-paths`,
