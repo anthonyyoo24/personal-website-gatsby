@@ -49,7 +49,7 @@
     }
 
     &:hover {
-      color: $blue-light-2of5;
+      color: $yellow-light-4of5;
     }
   }
 
@@ -94,7 +94,7 @@
     text-decoration: none;
 
     &:hover {
-      color: $blue-light-2of5;
+      color: $yellow-light-4of5;
     }
 
     &::before {
@@ -105,7 +105,7 @@
       width: 0%;
       height: 0.2rem;
       margin-top: 0.3rem;
-      background-color: $blue-light-2of5;
+      background-color: $yellow-light-4of5;
       transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
 
@@ -200,7 +200,7 @@
     transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
 
     &:hover {
-      color: $blue-light-2of5;
+      color: $yellow-light-4of5;
     }
   }
 
