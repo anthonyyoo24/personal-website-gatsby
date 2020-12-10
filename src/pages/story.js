@@ -26,7 +26,11 @@ const Story = () => {
         <title>My Story | Anthony Yoo</title>
       </Helmet>
       <section className="story">
-        <Img fluid={data.file.childImageSharp.fluid} className="story__img" />
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          loading="eager"
+          className="story__img"
+        />
         <StoryText />
       </section>
     </React.Fragment>
