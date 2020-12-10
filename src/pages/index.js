@@ -13,14 +13,14 @@ const Home = () => {
         home: file(relativePath: { eq: "home.JPG" }) {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
         about: file(relativePath: { eq: "about.JPG" }) {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }

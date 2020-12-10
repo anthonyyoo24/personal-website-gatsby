@@ -12,7 +12,7 @@ const Story = () => {
         file(relativePath: { eq: "portrait.jpg" }) {
           childImageSharp {
             fluid(quality: 100) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
