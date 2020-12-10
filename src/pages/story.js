@@ -28,7 +28,6 @@ const Story = () => {
       <section className="story">
         <Img
           fluid={data.file.childImageSharp.fluid}
-          loading="eager"
           className="story__img"
         />
         <StoryText />
