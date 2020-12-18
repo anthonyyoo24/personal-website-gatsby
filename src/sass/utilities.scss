@@ -1,5 +1,9 @@
-@import "./base.scss";
 @import "./variables.scss";
+
+.container {
+  max-width: 1263px;
+  margin: auto;
+}
 
 .divider {
   background-color: white;
