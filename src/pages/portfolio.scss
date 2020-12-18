@@ -71,6 +71,14 @@
     }
   }
 
+  &__buttons {
+    justify-self: center;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1.2rem;
+  }
+
   a {
     justify-self: center;
     align-self: end;
