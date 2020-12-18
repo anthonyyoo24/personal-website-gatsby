@@ -74,13 +74,6 @@ const Footer = () => {
         >
           <i className="footer__connect-link facebook icon"></i>
         </a>
-        <a
-          href="https://www.linkedin.com/in/youngshin-anthony-yoo-8172961b4"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <i className="footer__connect-link linkedin icon"></i>
-        </a>
       </div>
       <a
         className="footer__attribution"
