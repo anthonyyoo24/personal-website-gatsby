@@ -36,7 +36,7 @@ const Portfolio = () => {
 
   return (
     <React.Fragment>
-       <Helmet>
+      <Helmet>
         <title>Portfolio | Anthony Yoo</title>
       </Helmet>
       <div className="portfolio">
@@ -47,20 +47,29 @@ const Portfolio = () => {
             This is an e-commerce app built using React (with hooks), Redux, and
             SASS as well as Firebase for the database and authentication.
           </p>
-          <a
-            href="https://github.com/anthonyyoo24/boxAndcask"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <button className="github secondary button-2of4">
-              <Img
-                className="github__logo"
-                fluid={githubLogo.childImageSharp.fluid}
-                alt="Github Logo"
-              />
-              Github
-            </button>
-          </a>
+          <div className="project__buttons">
+            <a
+              href="https://boxandcask-fe15d.web.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button className="demo primary button-3of4">Demo</button>
+            </a>
+            <a
+              href="https://github.com/anthonyyoo24/boxAndcask"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button className="github secondary button-2of4">
+                <Img
+                  className="github__logo"
+                  fluid={githubLogo.childImageSharp.fluid}
+                  alt="Github Logo"
+                />
+                Github
+              </button>
+            </a>
+          </div>
         </div>
         <div className="project">
           <h2 className="project__name">Goal Tracker</h2>
@@ -73,20 +82,29 @@ const Portfolio = () => {
             This is a simple app that helps you manage your goals and tasks
             built with HTML, CSS, and JavaScript (using MVC architecture).
           </p>
-          <a
-            href="https://github.com/anthonyyoo24/goaltracker"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <button className="github secondary button-2of4">
-              <Img
-                className="github__logo"
-                fluid={githubLogo.childImageSharp.fluid}
-                alt="Github Logo"
-              />
-              Github
-            </button>
-          </a>
+          <div className="project__buttons">
+            <a
+              href="https://anthonyyoo24.github.io/goaltracker/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button className="demo primary button-3of4">Demo</button>
+            </a>
+            <a
+              href="https://github.com/anthonyyoo24/goaltracker"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button className="github secondary button-2of4">
+                <Img
+                  className="github__logo"
+                  fluid={githubLogo.childImageSharp.fluid}
+                  alt="Github Logo"
+                />
+                Github
+              </button>
+            </a>
+          </div>
         </div>
         <div className="project">
           <h2 className="project__name">Calculator</h2>
@@ -99,20 +117,29 @@ const Portfolio = () => {
             This is a basic calculator app that I built using HTML, CSS, and
             JavaScript.
           </p>
-          <a
-            href="https://github.com/anthonyyoo24/Calculator"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <button className="github secondary button-2of4">
-              <Img
-                className="github__logo"
-                fluid={githubLogo.childImageSharp.fluid}
-                alt="Github Logo"
-              />
-              Github
-            </button>
-          </a>
+          <div className="project__buttons">
+            <a
+              href="https://anthonyyoo24.github.io/Calculator/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button className="demo primary button-3of4">Demo</button>
+            </a>
+            <a
+              href="https://github.com/anthonyyoo24/Calculator"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <button className="github secondary button-2of4">
+                <Img
+                  className="github__logo"
+                  fluid={githubLogo.childImageSharp.fluid}
+                  alt="Github Logo"
+                />
+                Github
+              </button>
+            </a>
+          </div>
         </div>
       </div>
     </React.Fragment>
