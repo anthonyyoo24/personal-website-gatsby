@@ -51,7 +51,7 @@ const BlogComponent = () => {
   }
 
   return (
-    <React.Fragment>
+    <div className="container">
       <Helmet>
         <title>Blog | Anthony Yoo</title>
       </Helmet>
@@ -66,7 +66,7 @@ const BlogComponent = () => {
           boundaryRange={0}
         />
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 
