@@ -35,7 +35,7 @@ const Portfolio = () => {
   )
 
   return (
-    <React.Fragment>
+    <div className="container">
       <Helmet>
         <title>Portfolio | Anthony Yoo</title>
       </Helmet>
@@ -142,7 +142,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 
