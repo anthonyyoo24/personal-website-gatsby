@@ -26,7 +26,7 @@ const Post = () => {
     if (!post) return <div>Fetching post...</div>
 
     return (
-      <React.Fragment>
+      <div className="container">
         <Helmet>
           <title>{post.title} | Anthony Yoo</title>
           <link
@@ -49,7 +49,7 @@ const Post = () => {
             <Link to="/blog/page/1">Back to blog posts</Link>
           </button>
         </div>
-      </React.Fragment>
+      </div>
     )
   }
 
