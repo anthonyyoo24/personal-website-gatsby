@@ -98,33 +98,35 @@ const Contact = props => {
         fluid={wave.childImageSharp.fluid}
         Tag="section"
       >
-        <div className="contact">
-          <h1>Let's Get in Touch</h1>
-          <form
-            className="contact-form"
-            id="contact-form"
-            onSubmit={props.handleSubmit(onSubmit)}
-          >
-            <Field name="name" component={renderInput} placeholder="Name" />
-            <Field
-              name="email"
-              component={renderInput}
-              placeholder="Email"
-              type="email"
-            />
-            <Field
-              name="subject"
-              component={renderInput}
-              placeholder="Subject"
-            />
-            <Field
-              name="message"
-              component={renderInput}
-              placeholder="Message"
-              type="textarea"
-            />
-            <button className="primary button-3of4">{buttonText}</button>
-          </form>
+        <div className="container">
+          <div className="contact">
+            <h1>Let's Get in Touch</h1>
+            <form
+              className="contact-form"
+              id="contact-form"
+              onSubmit={props.handleSubmit(onSubmit)}
+            >
+              <Field name="name" component={renderInput} placeholder="Name" />
+              <Field
+                name="email"
+                component={renderInput}
+                placeholder="Email"
+                type="email"
+              />
+              <Field
+                name="subject"
+                component={renderInput}
+                placeholder="Subject"
+              />
+              <Field
+                name="message"
+                component={renderInput}
+                placeholder="Message"
+                type="textarea"
+              />
+              <button className="primary button-3of4">{buttonText}</button>
+            </form>
+          </div>
         </div>
       </BackgroundImage>
     </React.Fragment>
