@@ -21,18 +21,15 @@ const Story = () => {
   )
 
   return (
-    <React.Fragment>
+    <div className="container">
       <Helmet>
         <title>My Story | Anthony Yoo</title>
       </Helmet>
       <section className="story">
-        <Img
-          fluid={data.file.childImageSharp.fluid}
-          className="story__img"
-        />
+        <Img fluid={data.file.childImageSharp.fluid} className="story__img" />
         <StoryText />
       </section>
-    </React.Fragment>
+    </div>
   )
 }
 
