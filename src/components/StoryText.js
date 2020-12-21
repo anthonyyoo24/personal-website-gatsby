@@ -14,7 +14,7 @@ const StoryText = () => {
         keep moving forward despite all the doubts and fears. It is what brought
         me to this point in my life where I feel like I have finally found my
         real calling. It has been quite the journey to get here but let us first
-        take a detour to my past.
+        take a detour through my past.
       </p>
       <p>
         As far back as elementary school, I have always gravitated towards
@@ -73,12 +73,11 @@ const StoryText = () => {
         as time went on, I still could not figure out a specific idea of what I
         wanted to do. It was the first time in my life that I genuinely felt
         lost and I subsequently fell into complacency for a while. As I was
-        dealing with several other personal issues at the time, I ended up in
-        the lowest point of my life where hope and optimism seemed to constantly
-        escape me. But what really helped me keep going were the grand and
-        arguably delusional aspirations that I have held for most of my life. I
-        desperately desired to fulfill the high expectations that I set out to
-        achieve ever since I was a kid.
+        dealing with several other personal issues at the time, I had a bit of a
+        rock bottom moment. But what really helped me keep going were the grand
+        and arguably delusional aspirations that I have held for most of my
+        life. I desperately desired to fulfill the high expectations that I set
+        out to achieve ever since I was a kid.
       </p>
       <p>
         With a bit of faith and perseverance, I slowly made my way out of that
@@ -101,16 +100,15 @@ const StoryText = () => {
       <p>
         Around this time, I had to go into surgery to remove an enlarged thyroid
         cyst that was inhibiting my breathing, so I was able to take a couple
-        weeks off work. While I was recovering in the hospital and after I left,
-        I went through some online courses on HTML, CSS, and JavaScript. During
-        this experimental phase, not only did I feel like I had a good grasp on
+        weeks off work. While I was recovering in the hospital, I went through
+        some online courses on HTML, CSS, and JavaScript. During this
+        experimental phase, not only did I feel like I had a good grasp on
         everything that was taught, I really enjoyed it. It rekindled my passion
         for problem solving in a way that was reminiscent of my poker playing
         days. Given that I had been unhappy with my current job situation for a
         while and thought about quitting on a regular basis, I finally decided
-        to pull the trigger around the end of last year so that I could learn to
-        code full-time. I promptly packed up my things and moved back to my
-        hometown in Waterloo.
+        to pull the trigger so that I could learn to code full-time. I promptly
+        packed up my things and moved back to my hometown in Waterloo.
       </p>
       <p>
         Since that day until now, it felt like I went through a bit of a
