@@ -3,11 +3,11 @@ import { Router } from "@reach/router"
 import BlogComponent from "../components/BlogComponent"
 import Post from "../components/Post"
 
-const Blog = ({ location }) => {
+const Blog = () => {
   return (
     <Router basepath="/blog">
       <BlogComponent path="/page/:page" />
-      <Post path="/:slug" location={location} />
+      <Post path="/:slug" />
     </Router>
   )
 }
