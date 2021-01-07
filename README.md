@@ -6,7 +6,7 @@ You can find it at https://www.anthonyyoo.com/.
 ## Technologies
 
 - JavaScript
-- React (Hooks, React Router)
+- React (hooks)
 - Redux (Thunk, Redux Form)
 - HTML
 - CSS (CSS Grid, BEM, media queries, animation key frames)
@@ -14,6 +14,7 @@ You can find it at https://www.anthonyyoo.com/.
 - Gatsby
 - ButterCMS
 - EmailJS
+- Netlify (continuous deployment)
 
 ## Contact
 
