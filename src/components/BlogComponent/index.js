@@ -25,11 +25,11 @@ const BlogComponent = () => {
   useEffect(() => {
     if (!JSON.parse(localStorage.getItem("posts"))) {
       dispatch(fetchPosts())
-    }
 
-    window.addEventListener("beforeunload", () => {
-      localStorage.clear()
-    })
+      window.addEventListener("beforeunload", () => {
+        localStorage.clear()
+      })
+    }
   }, [dispatch])
 
   const renderPosts = () => {
