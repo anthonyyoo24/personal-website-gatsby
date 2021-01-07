@@ -30,7 +30,7 @@ const BlogComponent = () => {
     window.addEventListener("beforeunload", () => {
       localStorage.clear()
     })
-  }, [posts, dispatch])
+  }, [dispatch])
 
   const renderPosts = () => {
     if (!posts) return <p>Fetching posts...</p>
