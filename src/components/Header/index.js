@@ -13,9 +13,9 @@ const Header = ({ location }) => {
     if (location.pathname === "/") {
       dispatch(changeHeaderStyle("home"))
     } else {
-      dispatch(changeHeaderStyle())
+      if (headerStyle !== "filled") dispatch(changeHeaderStyle())
     }
-  }, [location.pathname, dispatch])
+  }, [location.pathname, headerStyle, dispatch])
 
   return (
     <React.Fragment>
@@ -27,58 +27,34 @@ const Header = ({ location }) => {
       </Helmet>
       <header className={`header ${headerStyle}`}>
         <span>
-          <Link
-            className="header__logo"
-            to="/"
-            onClick={() => dispatch(changeHeaderStyle("home"))}
-          >
+          <Link className="header__logo" to="/">
             ANTHONY YOO
           </Link>
         </span>
         <nav className="header__navigation">
           <ul>
             <li>
-              <Link
-                to="/"
-                className="header__navigation-link"
-                onClick={() => dispatch(changeHeaderStyle("home"))}
-              >
+              <Link to="/" className="header__navigation-link">
                 HOME
               </Link>
             </li>
             <li>
-              <Link
-                to="/story"
-                className="header__navigation-link"
-                onClick={() => dispatch(changeHeaderStyle())}
-              >
+              <Link to="/story" className="header__navigation-link">
                 MY STORY
               </Link>
             </li>
             <li>
-              <Link
-                to="/portfolio"
-                className="header__navigation-link"
-                onClick={() => dispatch(changeHeaderStyle())}
-              >
+              <Link to="/portfolio" className="header__navigation-link">
                 PORTFOLIO
               </Link>
             </li>
             <li>
-              <Link
-                to="/blog/page/1"
-                className="header__navigation-link"
-                onClick={() => dispatch(changeHeaderStyle())}
-              >
+              <Link to="/blog/page/1" className="header__navigation-link">
                 BLOG
               </Link>
             </li>
             <li>
-              <Link
-                to="/contact"
-                className="header__navigation-link"
-                onClick={() => dispatch(changeHeaderStyle())}
-              >
+              <Link to="/contact" className="header__navigation-link">
                 CONTACT
               </Link>
             </li>
@@ -98,47 +74,27 @@ const Header = ({ location }) => {
           <nav className="popup__navigation">
             <ul>
               <li>
-                <Link
-                  to="/"
-                  className="popup__navigation-link"
-                  onClick={() => dispatch(changeHeaderStyle("home"))}
-                >
+                <Link to="/" className="popup__navigation-link">
                   HOME
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/story"
-                  className="popup__navigation-link"
-                  onClick={() => dispatch(changeHeaderStyle())}
-                >
+                <Link to="/story" className="popup__navigation-link">
                   MY STORY
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/portfolio"
-                  className="popup__navigation-link"
-                  onClick={() => dispatch(changeHeaderStyle())}
-                >
+                <Link to="/portfolio" className="popup__navigation-link">
                   PORTFOLIO
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/blog/page/1"
-                  className="popup__navigation-link"
-                  onClick={() => dispatch(changeHeaderStyle())}
-                >
+                <Link to="/blog/page/1" className="popup__navigation-link">
                   BLOG
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/contact"
-                  className="popup__navigation-link"
-                  onClick={() => dispatch(changeHeaderStyle())}
-                >
+                <Link to="/contact" className="popup__navigation-link">
                   CONTACT
                 </Link>
               </li>
