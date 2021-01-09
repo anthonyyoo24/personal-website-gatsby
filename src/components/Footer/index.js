@@ -2,58 +2,34 @@ import "./style.scss"
 import React from "react"
 import { Link } from "gatsby"
 import butterCMS from "../../images/butter-w.png"
-import { changeHeaderStyle } from "../../redux/actions"
-import { useDispatch } from "react-redux"
 
 const Footer = () => {
-  const dispatch = useDispatch()
-
   return (
     <footer className="footer">
       <nav className="footer__navigation">
         <ul>
           <li>
-            <Link
-              to="/"
-              className="footer__navigation-link"
-              onClick={() => dispatch(changeHeaderStyle("home"))}
-            >
+            <Link to="/" className="footer__navigation-link">
               HOME
             </Link>
           </li>
           <li>
-            <Link
-              to="/story"
-              className="footer__navigation-link"
-              onClick={() => dispatch(changeHeaderStyle())}
-            >
+            <Link to="/story" className="footer__navigation-link">
               MY STORY
             </Link>
           </li>
           <li>
-            <Link
-              to="/portfolio"
-              className="footer__navigation-link"
-              onClick={() => dispatch(changeHeaderStyle())}
-            >
+            <Link to="/portfolio" className="footer__navigation-link">
               PORTFOLIO
             </Link>
           </li>
           <li>
-            <Link
-              to="/blog/page/1"
-              className="footer__navigation-link"
-              onClick={() => dispatch(changeHeaderStyle())}
-            >
+            <Link to="/blog/page/1" className="footer__navigation-link">
               BLOG
             </Link>
           </li>
           <li>
-            <Link
-              to="/contact"
-              className="footer__navigation-link"
-              onClick={() => dispatch(changeHeaderStyle())}
-            >
+            <Link to="/contact" className="footer__navigation-link">
               CONTACT
             </Link>
           </li>
