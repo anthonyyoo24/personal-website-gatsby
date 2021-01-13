@@ -43,13 +43,6 @@ const Footer = () => {
         >
           <i className="footer__connect-link github icon"></i>
         </a>
-        <a
-          href="https://www.facebook.com/anthony.yoo.3/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <i className="footer__connect-link facebook icon"></i>
-        </a>
       </div>
       <a
         className="footer__attribution"
