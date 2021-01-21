@@ -2,6 +2,10 @@ import butter from "../../../butter-client"
 
 export const fetchPosts = () => async dispatch => {
   const response = await butter.post.list()
+  localStorage.setItem(
+    "posts",
+    JSON.stringify({ ..._.mapKeys(response.data.data, "slug") })
+  )
 
   dispatch({ type: "FETCH_POSTS", payload: response.data.data })
 }
