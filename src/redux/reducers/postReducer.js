@@ -3,7 +3,7 @@ import { FETCH_POSTS, FETCH_POST } from "../actions/types"
 
 const INITIAL_STATE =
   typeof localStorage !== "undefined"
-    ? JSON.parse(localStorage.getItem("posts"))
+    ? JSON.parse(localStorage.getItem("posts")) || {}
     : {}
 
 const postReducer = (state = INITIAL_STATE, action) => {
