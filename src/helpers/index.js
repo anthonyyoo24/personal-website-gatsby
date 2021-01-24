@@ -1,14 +1,14 @@
 // Calls the reducer you passed in with the other subsequent arguments
 export const newState = (reducer, prevState, actionType = null, actionPayload = null) => {
-  let action
+  let action;
 
   if (actionType && actionPayload) {
-    action = { type: actionType, payload: actionPayload }
+    action = { type: actionType, payload: actionPayload };
   } else if (actionType && !actionPayload) {
-    action = { type: actionType }
+    action = { type: actionType };
   } else {
-    action = {}
+    action = {};
   }
 
-  return reducer(prevState, action)
-}
+  return reducer(prevState, action);
+};
