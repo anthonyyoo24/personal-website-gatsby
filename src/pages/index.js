@@ -1,7 +1,6 @@
 import './index.scss';
 import '../sass/utilities.scss';
-import _ from 'lodash';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import { Helmet } from 'react-helmet';
@@ -21,29 +20,6 @@ const Home = () => {
     `
   );
 
-  const [animate, setAnimate] = useState('');
-
-  useEffect(() => {
-    const about = document.querySelector('.about');
-
-    const handleScroll = () => {
-      if (window.scrollY >= about.offsetTop) {
-        setAnimate('animate');
-      }
-    };
-
-    handleScroll();
-
-    const debouncedHandleScroll = _.debounce(handleScroll, 20);
-
-    window.addEventListener('scroll', debouncedHandleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', debouncedHandleScroll);
-      debouncedHandleScroll.cancel();
-    };
-  }, []); 
-
   return (
     <React.Fragment>
       <Helmet>
@@ -51,12 +27,12 @@ const Home = () => {
       </Helmet>
       <BackgroundImage className='about' fluid={about.childImageSharp.fluid} Tag='section'>
         <div className='about__text-box'>
-          <h3 className={animate}>Hello, I'm</h3>
-          <h1 className={animate}>
+          <h3>Hello, I'm</h3>
+          <h1>
             Anthony <span className='highlight'>Yoo</span>
           </h1>
-          <h2 className={animate}>a front-end developer.</h2>
-          <p className={animate}>
+          <h2>a front-end developer.</h2>
+          <p>
             I currently use JavaScript, React, Redux, HTML, CSS, SASS, Firebase, Gatsby, and Git.
           </p>
         </div>
