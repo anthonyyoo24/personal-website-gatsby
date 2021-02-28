@@ -1,84 +1,12 @@
-@import "../sass/base.scss";
-@import "../sass/variables.scss";
-@import "../sass/animations.scss";
-
-.home {
-  height: 100vh;
-  -webkit-filter: grayscale(50%);
-          filter: grayscale(50%);
-
-  &__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    text-shadow: 0 0 2rem hsla(0, 0%, 0%, 1);
-
-    div {
-      -webkit-animation: fadeIn 2s ease-out 0.5s backwards;
-              animation: fadeIn 2s ease-out 0.5s backwards;
-    }
-  }
-
-  &__heading {
-    &--main {
-      display: block;
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 0.8rem;
-      -webkit-animation: moveInLeft 1s ease-out 0.5s backwards;
-              animation: moveInLeft 1s ease-out 0.5s backwards;
-
-      @media (max-width: 845px) {
-        font-size: 2.4rem;
-      }
-
-      @media (max-width: 730px) {
-        width: 36rem;
-      }
-
-      @media (max-width: 500px) {
-        width: 32rem;
-        font-size: 2rem;
-      }
-
-      @media (max-width: 380px) {
-        font-size: 1.8rem;
-        width: 30rem;
-      }
-    }
-
-    &--sub {
-      display: block;
-      font-size: 1.4rem;
-      font-family: "Playfair Display", sans-serif;
-      font-weight: 600;
-      letter-spacing: 0.2rem;
-      -webkit-animation: moveInRight 1s ease-out 0.5s backwards;
-              animation: moveInRight 1s ease-out 0.5s backwards;
-
-      @media (max-width: 845px) {
-        font-size: 1.2rem;
-      }
-
-      @media (max-width: 500px) {
-        font-size: 1rem;
-      }
-
-      @media (max-width: 380px) {
-        font-size: 0.8rem;
-      }
-    }
-  }
-}
+@import '../sass/base.scss';
+@import '../sass/variables.scss';
+@import '../sass/animations.scss';
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   -moz-column-gap: 3.2rem;
-       column-gap: 3.2rem;
+  column-gap: 3.2rem;
 
   height: 100vh;
   background-position: top;
@@ -121,6 +49,9 @@
       font-weight: 400;
       font-size: 3rem;
       visibility: hidden;
+      -webkit-animation: moveInLeft 1s ease-out 0.5s backwards;
+      animation: moveInLeft 1s ease-out 0.5s backwards;
+      visibility: visible;
 
       @media (max-width: 1000px) {
         font-size: 2.4rem;
@@ -129,18 +60,15 @@
       @media (max-width: 645px) {
         font-size: 2rem;
       }
-
-      &.animate {
-        -webkit-animation: moveInLeft 1s ease-out 0.5s backwards;
-                animation: moveInLeft 1s ease-out 0.5s backwards;
-        visibility: visible;
-      }
     }
 
     h1 {
       font-size: 6rem;
       color: $yellow-light-3of5;
       visibility: hidden;
+      -webkit-animation: moveInLeft 1s ease-out 1s backwards;
+      animation: moveInLeft 1s ease-out 1s backwards;
+      visibility: visible;
 
       @media (max-width: 1000px) {
         font-size: 4.8rem;
@@ -149,18 +77,15 @@
       @media (max-width: 645px) {
         font-size: 3.6rem;
       }
-
-      &.animate {
-        -webkit-animation: moveInLeft 1s ease-out 1s backwards;
-                animation: moveInLeft 1s ease-out 1s backwards;
-        visibility: visible;
-      }
     }
 
     h2 {
       margin-top: -0.8rem;
       font-size: 3.6rem;
       visibility: hidden;
+      -webkit-animation: moveInLeft 1s ease-out 1.5s backwards;
+      animation: moveInLeft 1s ease-out 1.5s backwards;
+      visibility: visible;
 
       @media (max-width: 1000px) {
         font-size: 3rem;
@@ -169,12 +94,6 @@
       @media (max-width: 645px) {
         font-size: 2.4rem;
       }
-
-      &.animate {
-        -webkit-animation: moveInLeft 1s ease-out 1.5s backwards;
-                animation: moveInLeft 1s ease-out 1.5s backwards;
-        visibility: visible;
-      }
     }
 
     p {
@@ -182,6 +101,9 @@
       font-weight: 400;
       font-size: 2rem;
       visibility: hidden;
+      -webkit-animation: moveInLeft 1s ease-out 2s backwards;
+      animation: moveInLeft 1s ease-out 2s backwards;
+      visibility: visible;
 
       @media (max-width: 1000px) {
         font-size: 1.4rem;
@@ -189,12 +111,6 @@
 
       @media (max-width: 645px) {
         font-size: 1.2rem;
-      }
-
-      &.animate {
-        -webkit-animation: moveInLeft 1s ease-out 2s backwards;
-                animation: moveInLeft 1s ease-out 2s backwards;
-        visibility: visible;
       }
     }
   }
