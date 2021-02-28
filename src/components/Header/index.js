@@ -40,7 +40,7 @@ const Header = ({ location }) => {
             </li>
             <li>
               <Link to="/story" className="header__navigation-link">
-                MY STORY
+                ABOUT ME
               </Link>
             </li>
             <li>
