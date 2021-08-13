@@ -37,6 +37,13 @@ const Footer = () => {
       </nav>
       <div className="footer__connect">
         <a
+          href="https://www.linkedin.com/in/anthony-youngshin-yoo/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i className="footer__connect-link linkedin icon"></i>
+        </a>
+        <a
           href="https://github.com/anthonyyoo24"
           rel="noopener noreferrer"
           target="_blank"
