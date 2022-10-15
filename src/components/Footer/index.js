@@ -36,13 +36,13 @@ const Footer = () => {
         </ul>
       </nav>
       <div className='footer__connect'>
-        {/* <a
-          href="https://www.linkedin.com/in/anthony-youngshin-yoo/"
-          rel="noopener noreferrer"
-          target="_blank"
+        <a
+          href='https://www.linkedin.com/in/anthony-youngshin-yoo/'
+          rel='noopener noreferrer'
+          target='_blank'
         >
-          <i className="footer__connect-link linkedin icon"></i>
-        </a> */}
+          <i className='footer__connect-link linkedin icon'></i>
+        </a>
         <a href='https://github.com/anthonyyoo24' rel='noopener noreferrer' target='_blank'>
           <i className='footer__connect-link github icon'></i>
         </a>
@@ -55,7 +55,7 @@ const Footer = () => {
       >
         <img src={butterCMS} alt='ButterCMS Logo' />
       </a>
-      {/* <p className="footer__copyright">&copy; 2020 Anthony Youngshin Yoo</p> */}
+      <p className='footer__copyright'>&copy; 2020 Anthony Youngshin Yoo</p>
     </footer>
   );
 };
