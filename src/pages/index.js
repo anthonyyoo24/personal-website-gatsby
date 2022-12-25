@@ -33,7 +33,7 @@ const Home = () => {
           </h1>
           <h2>a front-end developer.</h2>
           <p>
-            I currently use JavaScript, React, Redux, HTML, CSS, SASS, Firebase, Gatsby, and Git.
+            I currently use JavaScript, TypeScript, React, Redux, Node.js, HTML, CSS, and SASS.
           </p>
         </div>
       </BackgroundImage>
